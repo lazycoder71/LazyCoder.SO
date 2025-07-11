@@ -1,5 +1,6 @@
 ﻿#if UNITY_EDITOR
 
+using LazyCoder.Core;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
