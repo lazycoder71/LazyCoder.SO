@@ -19,7 +19,7 @@ namespace LazyCoder.SO
 #if UNITY_EDITOR
                     if (s_instance == null)
                     {
-                        string configPath = $"Assets/_ROOT/Resources/{s_rootFolderName}/";
+                        string configPath = $"Assets/Resources/{s_rootFolderName}/";
 
                         if (!System.IO.Directory.Exists(configPath))
                             System.IO.Directory.CreateDirectory(configPath);
