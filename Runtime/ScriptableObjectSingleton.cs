@@ -4,8 +4,8 @@ namespace LazyCoder.SO
 {
     public abstract class ScriptableObjectSingleton<T> : ScriptableObject where T : ScriptableObject
     {
-        private static readonly string s_rootFolderName = "ScriptableObjectSingleton";
-
+        private const string RootFolderName = "ScriptableObjectSingleton";
+        
         private static T s_instance = null;
 
         public static T Instance
@@ -14,12 +14,12 @@ namespace LazyCoder.SO
             {
                 if (s_instance == null)
                 {
-                    s_instance = Resources.Load<T>($"{s_rootFolderName}/{typeof(T)}");
+                    s_instance = Resources.Load<T>($"{RootFolderName}/{typeof(T)}");
 
 #if UNITY_EDITOR
                     if (s_instance == null)
                     {
-                        string configPath = $"Assets/Resources/{s_rootFolderName}/";
+                        string configPath = $"Assets/Resources/{RootFolderName}/";
 
                         if (!System.IO.Directory.Exists(configPath))
                             System.IO.Directory.CreateDirectory(configPath);

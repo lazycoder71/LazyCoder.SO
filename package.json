@@ -1,7 +1,7 @@
 {
   "name": "lazycoder.unity.so",
   "displayName": "LazyCoder ScriptableObject",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "unity": "6000.1",
   "description": "ScriptableObject assets support.",
   "keywords": [
