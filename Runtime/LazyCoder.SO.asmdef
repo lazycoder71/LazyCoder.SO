@@ -2,7 +2,7 @@
     "name": "LazyCoder.SO",
     "rootNamespace": "LazyCoder.SO",
     "references": [
-        "GUID:066eba6989fe3dc4193e5b535868c168"
+        "LazyCoder.Core"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
