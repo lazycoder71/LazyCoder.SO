@@ -182,11 +182,12 @@ namespace LazyCoder.SO.Editor
             if (targetType == null)
             {
                 Debug.LogError($"Cannot find type: {_typeName} in assembly: {_assemblyName}");
+                return;
             }
 
             var asset = ScriptableObject.CreateInstance(targetType);
 
-            ProjectWindowUtil.CreateAsset(asset, $"{_typeName}.asset");
+            ProjectWindowUtil.CreateAsset(asset, $"{targetType.FullName}.asset");
         }
         
         [MenuItem("Assets/Create/Scriptable Object", false, 0)]
